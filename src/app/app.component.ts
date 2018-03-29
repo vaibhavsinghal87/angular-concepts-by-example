@@ -12,7 +12,7 @@ export class AppComponent {
     { name: 'Two Way Binding', id: 'twoWayBinding'},
     { name: 'Unidirectional data flow', id: 'unidirectionalDataFlow'},
     { name: 'Pipes', id: 'pipe'},
-    { name: 'Directive', id: 'directive'},
+    { name: 'Attribute Directive', id: 'attributeDirective'},
     { name: 'Component Interaction', id: 'componentInteraction'}
   ];
 }

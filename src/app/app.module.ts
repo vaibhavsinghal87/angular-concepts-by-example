@@ -9,6 +9,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { AppRoutingModule } from './/app-routing.module';
 import { PipeComponent } from './pipe/pipe.component';
 import { MultiplyPipe } from './multiply.pipe';
+import { ShowFullTextDirective } from './show-full-text.directive';
+import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { MultiplyPipe } from './multiply.pipe';
     AppComponent,
     TwoWayBindingComponent,
     PipeComponent,
-    MultiplyPipe
+    MultiplyPipe,
+    ShowFullTextDirective,
+    AttributeDirectiveComponent
   ],
   imports: [
     BrowserModule,
