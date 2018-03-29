@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+
+<ul>
+  <li *ngFor="let item of conceptsArr">
+      <a routerLink="/{{ item.id }}">
+        <span class="badge">{{ item.name }}</span>
+      </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
