@@ -10,12 +10,12 @@ export class AppComponent {
 
   conceptsArr = [
     { name: 'Two Way Binding', id: 'twoWayBinding'},
-    { name: 'Unidirectional data flow', id: 'unidirectionalDataFlow'},
     { name: 'Pipes', id: 'pipe'},
     { name: 'Attribute Directive', id: 'attributeDirective'},
     { name: 'Structural Directive', id: 'structuralDirective'},
     { name: 'Component Interaction', id: 'componentInteraction'},
-    { name: 'Angular Forms', id: 'forms'},
-    { name: 'Observables', id: 'observables' }
+    { name: 'Observables', id: 'observables' },
+    { name: 'Template Forms', id: 'templateForms'},
+    { name: 'Reactive Forms', id: 'reactiveForms'}
   ];
 }

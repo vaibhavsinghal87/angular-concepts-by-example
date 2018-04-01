@@ -1,0 +1,9 @@
+<div class="parent">
+  <h2>
+    Component Interaction
+  </h2>
+  <app-child *ngFor="let car of arrCars"
+    [car]="car"
+    (onDeleteCar)="delete($event)">
+  </app-child>
+</div>
