@@ -12,6 +12,9 @@ import { MultiplyPipe } from './multiply.pipe';
 import { ShowFullTextDirective } from './show-full-text.directive';
 import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
+import { ObservablesComponent } from './observables/observables.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { ChildComponent } from './component-interaction/child/child.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { StructuralDirectiveComponent } from './structural-directive/structural-
     MultiplyPipe,
     ShowFullTextDirective,
     AttributeDirectiveComponent,
-    StructuralDirectiveComponent
+    StructuralDirectiveComponent,
+    ObservablesComponent,
+    ComponentInteractionComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,7 @@ export class AppComponent {
     { name: 'Attribute Directive', id: 'attributeDirective'},
     { name: 'Structural Directive', id: 'structuralDirective'},
     { name: 'Component Interaction', id: 'componentInteraction'},
-    { name: 'Angular Forms', id: 'forms'}
+    { name: 'Angular Forms', id: 'forms'},
+    { name: 'Observables', id: 'observables' }
   ];
 }
