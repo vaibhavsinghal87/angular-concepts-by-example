@@ -11,6 +11,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { MultiplyPipe } from './multiply.pipe';
 import { ShowFullTextDirective } from './show-full-text.directive';
 import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
+import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AttributeDirectiveComponent } from './attribute-directive/attribute-dir
     PipeComponent,
     MultiplyPipe,
     ShowFullTextDirective,
-    AttributeDirectiveComponent
+    AttributeDirectiveComponent,
+    StructuralDirectiveComponent
   ],
   imports: [
     BrowserModule,
