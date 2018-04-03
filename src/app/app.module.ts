@@ -15,6 +15,7 @@ import { StructuralDirectiveComponent } from './structural-directive/structural-
 import { ObservablesComponent } from './observables/observables.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { ChildComponent } from './component-interaction/child/child.component';
+import { TemplateFormsComponent } from './template-forms/template-forms.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ChildComponent } from './component-interaction/child/child.component';
     StructuralDirectiveComponent,
     ObservablesComponent,
     ComponentInteractionComponent,
-    ChildComponent
+    ChildComponent,
+    TemplateFormsComponent
   ],
   imports: [
     BrowserModule,

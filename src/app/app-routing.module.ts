@@ -8,6 +8,7 @@ import { AttributeDirectiveComponent } from './attribute-directive/attribute-dir
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { TemplateFormsComponent } from './template-forms/template-forms.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'attributeDirective', component: AttributeDirectiveComponent },
   { path: 'structuralDirective', component: StructuralDirectiveComponent },
   { path: 'observables', component: ObservablesComponent },
-  { path: 'componentInteraction', component: ComponentInteractionComponent }
+  { path: 'componentInteraction', component: ComponentInteractionComponent },
+  { path: 'templateForms', component: TemplateFormsComponent }
 ];
 
 @NgModule({
