@@ -16,6 +16,7 @@ export class AppComponent {
     { name: 'Component Interaction', id: 'componentInteraction'},
     { name: 'Observables', id: 'observables' },
     { name: 'Template Forms', id: 'templateForms'},
-    { name: 'Reactive Forms', id: 'reactiveForms'}
+    { name: 'Reactive Forms', id: 'reactiveForms'},
+    { name: 'Change Detection', id: 'changeDetection'}
   ];
 }

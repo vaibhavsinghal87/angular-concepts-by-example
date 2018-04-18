@@ -9,6 +9,7 @@ import { StructuralDirectiveComponent } from './structural-directive/structural-
 import { ObservablesComponent } from './observables/observables.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
+import { ChangeDetectionComponent } from './change-detection/change-detection.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'structuralDirective', component: StructuralDirectiveComponent },
   { path: 'observables', component: ObservablesComponent },
   { path: 'componentInteraction', component: ComponentInteractionComponent },
-  { path: 'templateForms', component: TemplateFormsComponent }
+  { path: 'templateForms', component: TemplateFormsComponent },
+  { path: 'changeDetection', component: ChangeDetectionComponent }
 ];
 
 @NgModule({

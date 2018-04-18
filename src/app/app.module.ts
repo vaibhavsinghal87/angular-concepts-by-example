@@ -16,6 +16,9 @@ import { ObservablesComponent } from './observables/observables.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { ChildComponent } from './component-interaction/child/child.component';
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
+import { ChangeDetectionComponent } from './change-detection/change-detection.component';
+import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push/change-detection-on-push.component';
+import { ChangeDetectionDefaultComponent } from './change-detection/change-detection-default/change-detection-default.component';
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import { TemplateFormsComponent } from './template-forms/template-forms.componen
     ObservablesComponent,
     ComponentInteractionComponent,
     ChildComponent,
-    TemplateFormsComponent
+    TemplateFormsComponent,
+    ChangeDetectionComponent,
+    ChangeDetectionOnPushComponent,
+    ChangeDetectionDefaultComponent
   ],
   imports: [
     BrowserModule,

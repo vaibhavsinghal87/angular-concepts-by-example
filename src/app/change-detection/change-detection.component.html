@@ -1,0 +1,20 @@
+<h2>
+  Change Detection
+</h2>
+<p>Change Detection Strategy - <strong>Default</strong></p>
+<button type="button" (click)="changeObjectPropertiesDefault()">
+  Change Person Properties
+</button>
+<button type="button" (click)="changeObjectDefault()">
+  Change Person Object
+</button>
+<app-change-detection-default [person]=name></app-change-detection-default>
+
+<p>Change Detection Strategy - <strong>onPush</strong></p>
+<button type="button" (click)="changeObjectPropertiesOnPush()">
+  Change User Properties
+</button>
+<button type="button" (click)="changeObjectOnPush()">
+  Change User Object
+</button>
+<app-change-detection-on-push [user]=user></app-change-detection-on-push>
