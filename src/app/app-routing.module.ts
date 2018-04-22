@@ -10,6 +10,7 @@ import { ObservablesComponent } from './observables/observables.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
 import { ChangeDetectionComponent } from './change-detection/change-detection.component';
+import { HttpClientComponent } from './http-client/http-client.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'observables', component: ObservablesComponent },
   { path: 'componentInteraction', component: ComponentInteractionComponent },
   { path: 'templateForms', component: TemplateFormsComponent },
-  { path: 'changeDetection', component: ChangeDetectionComponent }
+  { path: 'changeDetection', component: ChangeDetectionComponent },
+  { path: 'httpClient', component: HttpClientComponent }
 ];
 
 @NgModule({

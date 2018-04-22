@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { TemplateFormsComponent } from './template-forms/template-forms.componen
 import { ChangeDetectionComponent } from './change-detection/change-detection.component';
 import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push/change-detection-on-push.component';
 import { ChangeDetectionDefaultComponent } from './change-detection/change-detection-default/change-detection-default.component';
+import { HttpClientComponent } from './http-client/http-client.component';
 
 
 @NgModule({
@@ -36,13 +38,15 @@ import { ChangeDetectionDefaultComponent } from './change-detection/change-detec
     TemplateFormsComponent,
     ChangeDetectionComponent,
     ChangeDetectionOnPushComponent,
-    ChangeDetectionDefaultComponent
+    ChangeDetectionDefaultComponent,
+    HttpClientComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
