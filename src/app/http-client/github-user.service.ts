@@ -10,11 +10,7 @@ export class GithubUserService {
 
   getUserDetails(user: string) {
     let url = this.apiURL + user;
-    this.http.get(url).subscribe(
-      data => {
-        console.log(data);
-      }
-    );
+    return this.http.get(url);
   }
 
 }

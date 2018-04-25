@@ -18,8 +18,12 @@ export class HttpClientComponent implements OnInit {
   }
 
   getUserDetails(){
-    console.log(this.user);
-    this.userDetails = this.userService.getUserDetails(this.user);
+    this.userService.getUserDetails(this.user)
+      .subscribe(data => {
+        this.userDetails = data;
+        console.log(data['login'], this.userDetails.login);
+      }
+    );
   }
 
 }
