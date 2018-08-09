@@ -7,12 +7,19 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
+  // passing expression to child
   @Input() car: any;
+  // passing static value to child
+  @Input() name: String;
+  // passing function from parent to child
+  @Input() cars: Function;
+  
   @Output() onDeleteCar = new EventEmitter(); 
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.cars);
   }
 
   deleteCar(car) {

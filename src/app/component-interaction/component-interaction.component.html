@@ -3,6 +3,8 @@
     Component Interaction
   </h2>
   <app-child *ngFor="let car of arrCars"
+    [cars]="getCars()"
+    [name]="'Vaibhav Singhal'"
     [car]="car"
     (onDeleteCar)="delete($event)">
   </app-child>

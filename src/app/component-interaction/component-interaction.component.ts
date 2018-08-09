@@ -26,4 +26,7 @@ export class ComponentInteractionComponent implements OnInit {
     );
   }
 
+  getCars() {
+    return this.arrCars;
+  }
 }
