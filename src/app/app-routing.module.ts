@@ -11,6 +11,7 @@ import { ComponentInteractionComponent } from './component-interaction/component
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
 import { ChangeDetectionComponent } from './change-detection/change-detection.component';
 import { HttpClientComponent } from './http-client/http-client.component';
+import { ContentProjectionUsageComponent } from './content-projection/content-projection-usage.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'componentInteraction', component: ComponentInteractionComponent },
   { path: 'templateForms', component: TemplateFormsComponent },
   { path: 'changeDetection', component: ChangeDetectionComponent },
-  { path: 'httpClient', component: HttpClientComponent }
+  { path: 'httpClient', component: HttpClientComponent },
+  { path: 'contentProjection', component: ContentProjectionUsageComponent }
 ];
 
 @NgModule({

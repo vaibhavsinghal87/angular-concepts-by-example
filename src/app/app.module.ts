@@ -21,6 +21,8 @@ import { ChangeDetectionComponent } from './change-detection/change-detection.co
 import { ChangeDetectionOnPushComponent } from './change-detection/change-detection-on-push/change-detection-on-push.component';
 import { ChangeDetectionDefaultComponent } from './change-detection/change-detection-default/change-detection-default.component';
 import { HttpClientComponent } from './http-client/http-client.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { ContentProjectionUsageComponent } from './content-projection/content-projection-usage.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { HttpClientComponent } from './http-client/http-client.component';
     ChangeDetectionComponent,
     ChangeDetectionOnPushComponent,
     ChangeDetectionDefaultComponent,
-    HttpClientComponent
+    HttpClientComponent,
+    ContentProjectionComponent,
+    ContentProjectionUsageComponent
   ],
   imports: [
     BrowserModule,
