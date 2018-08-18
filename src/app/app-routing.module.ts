@@ -12,6 +12,7 @@ import { TemplateFormsComponent } from './template-forms/template-forms.componen
 import { ChangeDetectionComponent } from './change-detection/change-detection.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 import { ContentProjectionUsageComponent } from './content-projection/content-projection-usage.component';
+import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'templateForms', component: TemplateFormsComponent },
   { path: 'changeDetection', component: ChangeDetectionComponent },
   { path: 'httpClient', component: HttpClientComponent },
-  { path: 'contentProjection', component: ContentProjectionUsageComponent }
+  { path: 'contentProjection', component: ContentProjectionUsageComponent },
+  { path: 'templateVariables', component: TemplateVariablesComponent }
 ];
 
 @NgModule({

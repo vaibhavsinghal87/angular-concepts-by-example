@@ -23,6 +23,8 @@ import { ChangeDetectionDefaultComponent } from './change-detection/change-detec
 import { HttpClientComponent } from './http-client/http-client.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { ContentProjectionUsageComponent } from './content-projection/content-projection-usage.component';
+import { TemplateVariablesComponent } from './template-variables/template-variables.component';
+import { KeypointsComponent } from './common/keypoints/keypoints.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { ContentProjectionUsageComponent } from './content-projection/content-pr
     ChangeDetectionDefaultComponent,
     HttpClientComponent,
     ContentProjectionComponent,
-    ContentProjectionUsageComponent
+    ContentProjectionUsageComponent,
+    TemplateVariablesComponent,
+    KeypointsComponent
   ],
   imports: [
     BrowserModule,

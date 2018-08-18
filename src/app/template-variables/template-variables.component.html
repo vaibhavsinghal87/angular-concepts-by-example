@@ -1,0 +1,15 @@
+<h2>
+  Template Variable
+</h2>
+
+<div>
+  <input #title (keyup)="0">
+  <span>{{title.value}}</span>
+</div>
+<h4>{{title}}</h4>
+<div>
+  <input #message (keyup)="setMessage(message.value)">
+  <span>{{greetMessage}}</span>
+</div>
+
+<app-keypoints [points]=points></app-keypoints>

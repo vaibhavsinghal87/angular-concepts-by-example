@@ -19,6 +19,7 @@ export class AppComponent {
     { name: 'Reactive Forms', id: 'reactiveForms'},
     { name: 'Change Detection', id: 'changeDetection'},
     { name: 'Http Client', id: 'httpClient'},
-    { name: 'Content Projection using ng-content', id: 'contentProjection'}
+    { name: 'Content Projection using ng-content', id: 'contentProjection'},
+    { name: 'Template Variable', id: 'templateVariables'}
   ];
 }
