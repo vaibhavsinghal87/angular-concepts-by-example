@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
-import { from } from 'rxjs/observable/from';
-import { Subject } from 'rxjs/Subject';
+import { of, from } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-observables',
