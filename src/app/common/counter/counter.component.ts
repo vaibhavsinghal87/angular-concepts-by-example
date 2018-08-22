@@ -18,6 +18,10 @@ export class CounterComponent implements OnInit {
     this.val++;
   }
 
+  reduce() {
+    this.val--;
+  }
+
   private decrement() {
     this.val--;
   }

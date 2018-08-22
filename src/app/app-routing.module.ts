@@ -13,6 +13,7 @@ import { ChangeDetectionComponent } from './change-detection/change-detection.co
 import { HttpClientComponent } from './http-client/http-client.component';
 import { ContentProjectionUsageComponent } from './content-projection/content-projection-usage.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
+import { ViewChildComponent } from './view-child/view-child.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'changeDetection', component: ChangeDetectionComponent },
   { path: 'httpClient', component: HttpClientComponent },
   { path: 'contentProjection', component: ContentProjectionUsageComponent },
-  { path: 'templateVariables', component: TemplateVariablesComponent }
+  { path: 'templateVariables', component: TemplateVariablesComponent },
+  { path: 'viewChild', component: ViewChildComponent }
 ];
 
 @NgModule({

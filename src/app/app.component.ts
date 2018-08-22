@@ -20,6 +20,7 @@ export class AppComponent {
     { name: 'Change Detection', id: 'changeDetection'},
     { name: 'Http Client', id: 'httpClient'},
     { name: 'Content Projection using ng-content', id: 'contentProjection'},
-    { name: 'Template Variable', id: 'templateVariables'}
+    { name: 'Template Variable', id: 'templateVariables'},
+    { name: 'View Child', id: 'viewChild'}
   ];
 }

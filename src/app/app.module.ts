@@ -26,6 +26,7 @@ import { ContentProjectionUsageComponent } from './content-projection/content-pr
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 import { KeypointsComponent } from './common/keypoints/keypoints.component';
 import { CounterComponent } from './common/counter/counter.component';
+import { ViewChildComponent } from './view-child/view-child.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { CounterComponent } from './common/counter/counter.component';
     ContentProjectionUsageComponent,
     TemplateVariablesComponent,
     KeypointsComponent,
-    CounterComponent
+    CounterComponent,
+    ViewChildComponent
   ],
   imports: [
     BrowserModule,
