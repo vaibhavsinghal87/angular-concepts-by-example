@@ -27,6 +27,7 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
 import { KeypointsComponent } from './common/keypoints/keypoints.component';
 import { CounterComponent } from './common/counter/counter.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { ResetCounterComponent } from './common/reset-counter/reset-counter.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { ViewChildComponent } from './view-child/view-child.component';
     TemplateVariablesComponent,
     KeypointsComponent,
     CounterComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    ResetCounterComponent
   ],
   imports: [
     BrowserModule,

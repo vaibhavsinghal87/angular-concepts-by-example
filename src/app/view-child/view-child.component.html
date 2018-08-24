@@ -2,7 +2,32 @@
   @View Child
 </h2>
 
+<h3>Using @ViewChild to inject a reference to components to mediate between them</h3>
 <app-counter></app-counter>
-<div>{{ val }}</div>
+<div>{{ counterComp.val }}</div>
 <button (click)="increment()">INCREMENT</button>
 <button (click)="reduce()">DECREMENT</button>
+<app-reset-counter (click)="resetCounter()"></app-reset-counter>
+
+<hr>
+
+<h3>Using @ViewChild to inject a reference to the DOM element of a component</h3>
+<app-counter #counter></app-counter>
+<div>{{ counter.val }}</div>
+<button (click)="counter.increment()">INCREMENT</button>
+<button (click)="counter.decrement()">DECREMENT</button>
+
+<hr>
+
+<h3>Using @ViewChild to inject a reference to a DOM element</h3>
+<div #elem>I am DIV. Use @ViewChild to access me.</div>
+
+<hr>
+
+<h3>Using @ViewChild to inject a reference to a Directive</h3>
+<p appShowFullText [highlightColor]="'orange'">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+</p>
+
+
+<app-keypoints [points]=points></app-keypoints>

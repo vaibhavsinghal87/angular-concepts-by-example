@@ -21,6 +21,7 @@ export class AppComponent {
     { name: 'Http Client', id: 'httpClient'},
     { name: 'Content Projection using ng-content', id: 'contentProjection'},
     { name: 'Template Variable', id: 'templateVariables'},
-    { name: 'View Child', id: 'viewChild'}
+    { name: 'View Child', id: 'viewChild'},
+    { name: 'Dynamic Component', id: 'dynamicComp' }
   ];
 }

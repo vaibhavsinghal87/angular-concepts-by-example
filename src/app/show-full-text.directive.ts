@@ -19,6 +19,10 @@ export class ShowFullTextDirective {
     this.highlight(null);
   }
 
+  changeColor (color: string){
+    this.highlightColor = color;
+  }
+
   private highlight(color: string) {
     this.el.nativeElement.style.backgroundColor = color;
   }
