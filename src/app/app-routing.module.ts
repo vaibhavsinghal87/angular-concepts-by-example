@@ -14,6 +14,7 @@ import { HttpClientComponent } from './http-client/http-client.component';
 import { ContentProjectionUsageComponent } from './content-projection/content-projection-usage.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { ViewChildrenComponent } from './view-children/view-children.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'httpClient', component: HttpClientComponent },
   { path: 'contentProjection', component: ContentProjectionUsageComponent },
   { path: 'templateVariables', component: TemplateVariablesComponent },
-  { path: 'viewChild', component: ViewChildComponent }
+  { path: 'viewChild', component: ViewChildComponent },
+  { path: 'viewChildren', component: ViewChildrenComponent }
 ];
 
 @NgModule({

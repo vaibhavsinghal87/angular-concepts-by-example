@@ -28,6 +28,7 @@ import { KeypointsComponent } from './common/keypoints/keypoints.component';
 import { CounterComponent } from './common/counter/counter.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { ResetCounterComponent } from './common/reset-counter/reset-counter.component';
+import { ViewChildrenComponent } from './view-children/view-children.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { ResetCounterComponent } from './common/reset-counter/reset-counter.comp
     KeypointsComponent,
     CounterComponent,
     ViewChildComponent,
-    ResetCounterComponent
+    ResetCounterComponent,
+    ViewChildrenComponent
   ],
   imports: [
     BrowserModule,
