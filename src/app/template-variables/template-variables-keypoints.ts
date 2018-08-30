@@ -1,4 +1,8 @@
 export const keypoints: Array<String> = [
+  `Template reference variables are created on the view template and are mostly consumed from the view.`,
+  `One of the greatest benefits of template variables is that they facilitate cross-component communication
+  at the view template level. Once declared, such variables can be referenced by sibling elements/
+  components and their children.`,
   `If you attempt to interpolate title.value and then manipulate the input field, you will not see the browser update. This is because Angular 2
   no longer supports bidirectional data binding in this way. Angular will decline to update the DOM until it thinks it needs to. This need is determined
   by what behavior in the application might cause the interpolated data to change. A bound
