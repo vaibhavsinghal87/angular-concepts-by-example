@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { PipeComponent } from './pipe/pipe.component';
 import { MultiplyPipe } from './multiply.pipe';
 import { ShowFullTextDirective } from './show-full-text.directive';
