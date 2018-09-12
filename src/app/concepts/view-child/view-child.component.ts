@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { keypoints } from './view-child-keypoints';
-import { CounterComponent } from '../common/counter/counter.component';
-import { ShowFullTextDirective } from '../show-full-text.directive';
+import { CounterComponent } from '../../shared/components/counter/counter.component';
+import { ShowFullTextDirective } from '../../shared/directives/show-full-text.directive';
 
 
 @Component({

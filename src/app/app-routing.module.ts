@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { PipeComponent } from './pipe/pipe.component';
-import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
-import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
-import { ObservablesComponent } from './observables/observables.component';
-import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
-import { TemplateFormsComponent } from './template-forms/template-forms.component';
-import { ChangeDetectionComponent } from './change-detection/change-detection.component';
-import { HttpClientComponent } from './http-client/http-client.component';
-import { ContentProjectionUsageComponent } from './content-projection/content-projection-usage.component';
-import { TemplateVariablesComponent } from './template-variables/template-variables.component';
-import { ViewChildComponent } from './view-child/view-child.component';
-import { ViewChildrenComponent } from './view-children/view-children.component';
+import { TwoWayBindingComponent } from './concepts/two-way-binding/two-way-binding.component';
+import { PipeComponent } from './concepts/pipe/pipe.component';
+import { AttributeDirectiveComponent } from './concepts/attribute-directive/attribute-directive.component';
+import { StructuralDirectiveComponent } from './concepts/structural-directive/structural-directive.component';
+import { ObservablesComponent } from './concepts/observables/observables.component';
+import { ComponentInteractionComponent } from './concepts/component-interaction/component-interaction.component';
+import { TemplateFormsComponent } from './concepts/template-forms/template-forms.component';
+import { ChangeDetectionComponent } from './concepts/change-detection/change-detection.component';
+import { HttpClientComponent } from './concepts/http-client/http-client.component';
+import { ContentProjectionUsageComponent } from './concepts/content-projection/content-projection-usage.component';
+import { TemplateVariablesComponent } from './concepts/template-variables/template-variables.component';
+import { ViewChildComponent } from './concepts/view-child/view-child.component';
+import { ViewChildrenComponent } from './concepts/view-children/view-children.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },

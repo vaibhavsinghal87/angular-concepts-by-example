@@ -22,7 +22,6 @@ export class AppComponent {
     { name: 'Content Projection using ng-content', id: 'contentProjection'},
     { name: 'Template Variable', id: 'templateVariables'},
     { name: 'View Child', id: 'viewChild'},
-    { name: 'View Children', id: 'viewChildren'},
-    { name: 'Dynamic Component', id: 'dynamicComp' }
+    { name: 'View Children', id: 'viewChildren'}
   ];
 }

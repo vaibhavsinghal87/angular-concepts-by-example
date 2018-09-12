@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChildren, QueryList, ElementRef } from '@angular/core';
-import { ShowFullTextDirective } from '../show-full-text.directive';
+import { ShowFullTextDirective } from '../../shared/directives/show-full-text.directive';
 
 @Component({
   selector: 'app-view-children',
