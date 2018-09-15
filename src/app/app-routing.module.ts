@@ -15,7 +15,6 @@ import { ContentProjectionUsageComponent } from './features/concepts/content-pro
 import { TemplateVariablesComponent } from './features/concepts/template-variables/template-variables.component';
 import { ViewChildComponent } from './features/concepts/view-child/view-child.component';
 import { ViewChildrenComponent } from './features/concepts/view-children/view-children.component';
-import { ConceptsContainerComponent } from './features/concepts-container/concepts-container.component';
 
 const routes: Routes = [
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
