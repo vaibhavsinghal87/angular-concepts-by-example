@@ -1,16 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
-</div>
+<app-header></app-header>
 
-<ul>
-  <li *ngFor="let item of conceptsArr">
-      <a routerLink="/{{ item.id }}">
-        <span class="badge">{{ item.name }}</span>
-      </a>
-  </li>
-</ul>
+<mat-card class="warn mat-elevation-z10" *ngFor="let item of conceptsArr">
+  <a routerLink="/{{ item.id }}">
+    {{ item.name }}
+  </a>
+</mat-card>
 
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>
