@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TwoWayBindingComponent } from './features/concepts/two-way-binding/two-way-binding.component';
@@ -15,8 +14,16 @@ import { ContentProjectionUsageComponent } from './features/concepts/content-pro
 import { TemplateVariablesComponent } from './features/concepts/template-variables/template-variables.component';
 import { ViewChildComponent } from './features/concepts/view-child/view-child.component';
 import { ViewChildrenComponent } from './features/concepts/view-children/view-children.component';
+import { ConceptsContainerComponent } from './features/concepts-container/concepts-container.component';
 
 const routes: Routes = [
+  /* {
+    path: 'concepts',
+    children: [
+      { path: 'pipe', component: PipeComponent }
+    ]
+  }, */
+  { path: 'concepts', component: ConceptsContainerComponent },
   { path: 'twoWayBinding', component: TwoWayBindingComponent },
   { path: 'pipe', component: PipeComponent },
   { path: 'attributeDirective', component: AttributeDirectiveComponent },
@@ -29,7 +36,8 @@ const routes: Routes = [
   { path: 'contentProjection', component: ContentProjectionUsageComponent },
   { path: 'templateVariables', component: TemplateVariablesComponent },
   { path: 'viewChild', component: ViewChildComponent },
-  { path: 'viewChildren', component: ViewChildrenComponent }
+  { path: 'viewChildren', component: ViewChildrenComponent },
+  { path: '', redirectTo: 'concepts', pathMatch: 'full' }
 ];
 
 @NgModule({

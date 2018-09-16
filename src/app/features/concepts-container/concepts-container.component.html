@@ -1,0 +1,13 @@
+<section>
+    <app-view-switcher #viewSwitcher></app-view-switcher>
+
+    <app-card-layout 
+        [concepts]="concepts"
+        *ngIf="viewSwitcher.selected === 'list'">
+    </app-card-layout>
+
+    <app-grid-layout 
+        [concepts]="concepts"
+        *ngIf="viewSwitcher.selected === 'grid'">
+    </app-grid-layout>
+</section>

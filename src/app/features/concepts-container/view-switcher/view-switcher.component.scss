@@ -1,0 +1,8 @@
+.view-switcher{
+    display: flex;
+    justify-content: flex-end;
+    
+    .mat-button-toggle-group {
+        margin-bottom: 40px;
+    }
+}

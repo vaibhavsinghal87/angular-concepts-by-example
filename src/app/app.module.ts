@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './shared/material/material.module';
 
 import { AppComponent } from './app.component';
 import { TwoWayBindingComponent } from './features/concepts/two-way-binding/two-way-binding.component';
@@ -33,6 +33,7 @@ import { ViewChildrenComponent } from './features/concepts/view-children/view-ch
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './features/header/header.component';
 import { FooterComponent } from './features/footer/footer.component';
+import { ConceptsContainerModule } from './features/concepts-container/concepts-container.module';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import { FooterComponent } from './features/footer/footer.component';
     MaterialModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ConceptsContainerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

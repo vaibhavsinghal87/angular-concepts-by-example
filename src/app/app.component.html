@@ -1,11 +1,6 @@
 <app-header></app-header>
 
-<mat-card class="warn mat-elevation-z10" *ngFor="let item of conceptsArr">
-  <a routerLink="/{{ item.id }}">
-    {{ item.name }}
-  </a>
-</mat-card>
-
-<router-outlet></router-outlet>
-
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
 <app-footer></app-footer>
