@@ -1,4 +1,9 @@
+@import '~@angular/material/theming';
+
 .mat-grid-tile {
     background: lightblue;
-    
+    &:hover {
+        @include mat-elevation(5); 
+        border: 1px solid blue;
+    }    
 }
