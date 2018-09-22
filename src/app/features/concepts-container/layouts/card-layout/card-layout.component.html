@@ -1,4 +1,4 @@
-<mat-card *ngFor="let item of concepts" routerLink="/{{ item?.id }}">
+<mat-card *ngFor="let item of concepts" routerLink="detail/{{ item?.id }}">
     <mat-card-content>
         {{ item?.name }}
     </mat-card-content>

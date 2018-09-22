@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-/* import { TwoWayBindingComponent } from '../../features/concepts/two-way-binding/two-way-binding.component';
+import { TwoWayBindingComponent } from '../../features/concepts/two-way-binding/two-way-binding.component';
+import { ConceptsContainerComponent } from './concepts-list/concepts-container.component';
+import { ConceptDetailsComponent } from './concept-detail/concept-details.component';
 import { PipeComponent } from '../../features/concepts/pipe/pipe.component';
 import { AttributeDirectiveComponent } from '../../features/concepts/attribute-directive/attribute-directive.component';
 import { StructuralDirectiveComponent } from '../../features/concepts/structural-directive/structural-directive.component';
@@ -16,23 +18,29 @@ import { ViewChildComponent } from '../../features/concepts/view-child/view-chil
 import { ViewChildrenComponent } from '../../features/concepts/view-children/view-children.component';
 
 const routes: Routes = [
-  { path: 'concepts/twoWayBinding', component: TwoWayBindingComponent },
-  { path: 'pipe', component: PipeComponent },
-  { path: 'attributeDirective', component: AttributeDirectiveComponent },
-  { path: 'structuralDirective', component: StructuralDirectiveComponent },
-  { path: 'observables', component: ObservablesComponent },
-  { path: 'componentInteraction', component: ComponentInteractionComponent },
-  { path: 'templateForms', component: TemplateFormsComponent },
-  { path: 'changeDetection', component: ChangeDetectionComponent },
-  { path: 'httpClient', component: HttpClientComponent },
-  { path: 'contentProjection', component: ContentProjectionUsageComponent },
-  { path: 'templateVariables', component: TemplateVariablesComponent },
-  { path: 'viewChild', component: ViewChildComponent },
-  { path: 'viewChildren', component: ViewChildrenComponent }
-]; */
+  { path: '', component: ConceptsContainerComponent },
+  {
+    path: 'detail', component: ConceptDetailsComponent,
+    children: [
+      { path: 'twoWayBinding', component: TwoWayBindingComponent },
+      { path: 'pipe', component: PipeComponent },
+      { path: 'attributeDirective', component: AttributeDirectiveComponent },
+      { path: 'structuralDirective', component: StructuralDirectiveComponent },
+      { path: 'observables', component: ObservablesComponent },
+      { path: 'componentInteraction', component: ComponentInteractionComponent },
+      { path: 'templateForms', component: TemplateFormsComponent },
+      { path: 'changeDetection', component: ChangeDetectionComponent },
+      { path: 'httpClient', component: HttpClientComponent },
+      { path: 'contentProjection', component: ContentProjectionUsageComponent },
+      { path: 'templateVariables', component: TemplateVariablesComponent },
+      { path: 'viewChild', component: ViewChildComponent },
+      { path: 'viewChildren', component: ViewChildrenComponent }
+    ]
+  },
+];
 
 @NgModule({
-  imports: [/* RouterModule.forChild(routes) */],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class ConceptsContainerRoutingModule { }

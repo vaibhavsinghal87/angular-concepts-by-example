@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { conceptsList } from './concepts-list';
+import { conceptsList } from '../concepts-list';
 
 @Component({
   selector: 'app-concepts-container',
