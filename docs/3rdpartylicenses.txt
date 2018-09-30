@@ -68,7 +68,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-@angular/router@6.1.7
+@angular/animations@6.1.7
+MIT
+MIT
+
+@angular/platform-browser@6.1.7
 MIT
 MIT
 
@@ -338,15 +342,11 @@ Apache License
  See the License for the specific language governing permissions and
  limitations under the License.
 
-@angular/platform-browser@6.1.7
+@angular/router@6.1.7
 MIT
 MIT
 
-@angular/animations@6.1.7
-MIT
-MIT
-
-@angular/forms@6.1.7
+@angular/core@6.1.7
 MIT
 MIT
 
@@ -374,6 +374,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-@angular/core@6.1.7
+@angular/forms@6.1.7
 MIT
 MIT
