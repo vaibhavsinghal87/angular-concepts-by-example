@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewSwitcherComponent implements OnInit {
 
-  selected: String = "list";
+  selected: string = "list";
 
   constructor() { }
 

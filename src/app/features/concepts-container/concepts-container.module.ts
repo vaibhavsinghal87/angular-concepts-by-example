@@ -33,6 +33,8 @@ import { ShowFullTextDirective } from '../../shared/directives/show-full-text.di
 import { KeypointsComponent } from '../../shared/components/keypoints/keypoints.component';
 import { CounterComponent } from '../../shared/components/counter/counter.component';
 import { ResetCounterComponent } from '../../shared/components/reset-counter/reset-counter.component';
+import { SearchConceptsComponent } from './search-concepts/search-concepts.component';
+import { ConceptsListService } from './concepts-list/concepts-list.service';
 
 
 @NgModule({
@@ -69,9 +71,11 @@ import { ResetCounterComponent } from '../../shared/components/reset-counter/res
     KeypointsComponent,
     CounterComponent,
     ResetCounterComponent,
-    ChildComponent
+    ChildComponent,
+    SearchConceptsComponent
   ],
   exports: [
   ],
+  providers: [ConceptsListService]
 })
 export class ConceptsContainerModule { }

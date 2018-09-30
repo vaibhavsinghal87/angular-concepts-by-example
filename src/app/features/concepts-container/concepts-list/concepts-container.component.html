@@ -1,13 +1,15 @@
 <section>
-    <app-view-switcher #viewSwitcher></app-view-switcher>
+    <mat-toolbar>
+        <mat-toolbar-row>
+            <app-search-concepts (changed)="searchTextChanged($event)"></app-search-concepts>
+            <span class="spacer"></span>
+            <app-view-switcher #viewSwitcher></app-view-switcher>
+        </mat-toolbar-row>
+    </mat-toolbar>
 
-    <app-card-layout 
-        [concepts]="concepts"
-        *ngIf="viewSwitcher.selected === 'list'">
+    <app-card-layout [concepts]="filteredConcepts" *ngIf="viewSwitcher.selected === 'list'">
     </app-card-layout>
 
-    <app-grid-layout 
-        [concepts]="concepts"
-        *ngIf="viewSwitcher.selected === 'grid'">
+    <app-grid-layout [concepts]="filteredConcepts" *ngIf="viewSwitcher.selected === 'grid'">
     </app-grid-layout>
 </section>

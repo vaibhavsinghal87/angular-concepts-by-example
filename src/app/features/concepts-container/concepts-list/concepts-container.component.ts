@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { conceptsList } from '../concepts-list';
+import { ConceptsListService } from './concepts-list.service';
 
 @Component({
   selector: 'app-concepts-container',
@@ -8,11 +8,21 @@ import { conceptsList } from '../concepts-list';
 })
 export class ConceptsContainerComponent implements OnInit {
 
-  concepts = conceptsList;
+  concepts: Object[];
+  filteredConcepts: Object[];
 
-  constructor() { }
+  constructor(private conceptService: ConceptsListService) { }
 
   ngOnInit() {
+    this.concepts = this.filteredConcepts = this.conceptService.getConceptList();
+  }
+
+  searchTextChanged(data: string) {
+    if (data && this.concepts) {
+      this.filteredConcepts = this.conceptService.filterConcepts(data);
+    } else {
+      this.filteredConcepts = this.concepts;
+    }
   }
 
 }

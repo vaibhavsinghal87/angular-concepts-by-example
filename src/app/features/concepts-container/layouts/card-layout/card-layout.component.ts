@@ -14,4 +14,8 @@ export class CardLayoutComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleChange(val){
+    console.log(val);
+  }
+
 }
