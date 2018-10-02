@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gh-deploy": "ng build --prod --output-path docs --base-href https://vaibhavsinghal87.github.io/angular-concepts-by-example/"
+    "gh-deploy": "ng build --prod --output-path docs --base-href https://vaibhavsinghal87.github.io/angular-concepts-by-example/",
+    "dist": "ng build --prod --source-map"
   },
   "private": true,
   "dependencies": {
