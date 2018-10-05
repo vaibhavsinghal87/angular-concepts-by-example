@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
-import { switchMap } from 'rxjs/operators';
+import { ConceptsListService } from '../concepts-list/concepts-list.service';
 
 @Component({
   selector: 'app-concept-details',
@@ -11,12 +11,13 @@ import { switchMap } from 'rxjs/operators';
 })
 export class ConceptDetailsComponent implements OnInit {
 
-  title: String;
+  title: string;
 
-  constructor(private location: Location, private router: ActivatedRoute) { }
+  constructor(private location: Location, private router: ActivatedRoute,
+    private conceptService: ConceptsListService) { }
 
   ngOnInit() {
-    console.log(this.router.snapshot.firstChild);
+    this.title = this.conceptService.getConceptTitle(this.router.firstChild.routeConfig.path);
   }
 
   goBackToConceptList() {

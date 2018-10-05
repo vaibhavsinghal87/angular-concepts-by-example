@@ -19,4 +19,11 @@ export class ConceptsListService {
     });
   }
 
+  getConceptTitle(id: string): string {
+    let title: object[] = this.conceptList.filter(item => {
+      return item['id'] === id;
+    });
+    return title[0]['name'];
+  }
+
 }
