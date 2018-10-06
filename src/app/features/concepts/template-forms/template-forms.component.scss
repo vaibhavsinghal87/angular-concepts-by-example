@@ -1,6 +1,15 @@
+.json {
+    margin-bottom: 30px;
+}
+
 .form-group {
     width: 400px;
     margin-bottom: 10px;
+
+    label {
+        display: inline-block;
+        width: 100px;
+    }
 }
 
 .ng-valid[required], .ng-valid.required  {

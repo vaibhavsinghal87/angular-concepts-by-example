@@ -1,12 +1,16 @@
 <div>
-  <input #title (keyup)="0">
+  <mat-form-field class="input-container">
+    <input #title matInput placeholder="ENTER VALUE" (keyup)="0">
+  </mat-form-field>
   <span>{{title.value}}</span>
 </div>
 <h4>{{title}}</h4>
 <hr>
 
 <div>
-  <input #message (keyup)="setMessage(message.value)">
+  <mat-form-field class="input-container">
+    <input #message matInput placeholder="ENTER VALUE" (keyup)="setMessage(message.value)">
+  </mat-form-field>
   <span>{{greetMessage}}</span>
 </div>
 <hr>
@@ -14,7 +18,7 @@
 <h3>Accessing Child properties and methods using template variable -</h3>
 <div>Accessing child property in parent: {{counter.val}}</div>
 <app-counter #counter></app-counter>
-<button (click)="counter.increment()">INCREMENT</button>
-<button (click)="counter.decrement()">DECREMENT</button>
+<button mat-flat-button (click)="counter.increment()">INCREMENT</button>
+<button mat-flat-button (click)="counter.decrement()">DECREMENT</button>
 
 <app-keypoints [points]=points></app-keypoints>

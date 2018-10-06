@@ -8,7 +8,7 @@ import { ShowFullTextDirective } from '../../../shared/directives/show-full-text
 @Component({
   selector: 'app-view-child',
   templateUrl: './view-child.component.html',
-  styleUrls: ['./view-child.component.css'],
+  styleUrls: ['./view-child.component.scss'],
   providers: []
 })
 export class ViewChildComponent implements OnInit {
@@ -34,7 +34,7 @@ export class ViewChildComponent implements OnInit {
 
   ngAfterViewInit() {
     // accessing native DOM element properties
-    this.elem.nativeElement.style.color = 'cyan';
+    this.elem.nativeElement.style.color = 'crimson';
     // accessing Directive properties
     this.dirRef.changeColor('cyan');
 

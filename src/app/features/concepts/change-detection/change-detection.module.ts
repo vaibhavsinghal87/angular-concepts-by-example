@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 
+import { SharedModule } from '../../../shared/shared.module';
 import { ChangeDetectionRoutingModule } from './change-detection-routing.module';
 
 import { ChangeDetectionComponent } from './change-detection.component';
@@ -8,6 +9,7 @@ import { ChangeDetectionOnPushComponent } from './change-detection-on-push/chang
 
 @NgModule({
   imports: [
+    SharedModule,
     ChangeDetectionRoutingModule
   ],
   declarations: [

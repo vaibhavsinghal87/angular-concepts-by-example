@@ -1,6 +1,7 @@
-<input [(ngModel)]="user"
-  placeholder="Enter user name"/>
-<button (click)="getUserDetails()">Fetch Details</button>
+<mat-form-field class="input-container">
+  <input matInput placeholder="Enter github username" [(ngModel)]="user">
+</mat-form-field>
+<button mat-flat-button (click)="getUserDetails()">Fetch Details</button>
 <div>
-    {{ userDetails | json }}
+  {{ userDetails | json }}
 </div>

@@ -7,7 +7,9 @@ export class ConceptsListService {
 
   conceptList = conceptsList;
 
-  constructor() { }
+  constructor() {
+    console.log('ConceptsListService is a singleton service. This console gets logged only once.');
+  }
 
   getConceptList(): Object[] {
     return this.conceptList;

@@ -4,7 +4,7 @@ import { GithubUserService } from './github-user.service';
 @Component({
   selector: 'app-http-client',
   templateUrl: './http-client.component.html',
-  styleUrls: ['./http-client.component.css'],
+  styleUrls: ['./http-client.component.scss'],
   providers: [GithubUserService]
 })
 export class HttpClientComponent implements OnInit {

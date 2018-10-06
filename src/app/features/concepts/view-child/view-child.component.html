@@ -1,8 +1,8 @@
 <h3>Using @ViewChild to inject a reference to components to mediate between them</h3>
 <app-counter></app-counter>
 <div>{{ counterComp.val }}</div>
-<button (click)="increment()">INCREMENT</button>
-<button (click)="reduce()">DECREMENT</button>
+<button mat-flat-button (click)="increment()">INCREMENT</button>
+<button mat-flat-button (click)="reduce()">DECREMENT</button>
 <app-reset-counter (click)="resetCounter()"></app-reset-counter>
 
 <hr>
@@ -10,8 +10,9 @@
 <h3>Using @ViewChild to inject a reference to the DOM element of a component</h3>
 <app-counter #counter></app-counter>
 <div>{{ counter.val }}</div>
-<button (click)="counter.increment()">INCREMENT</button>
-<button (click)="counter.decrement()">DECREMENT</button>
+<button mat-flat-button (click)="counter.increment()">INCREMENT</button>
+<button mat-flat-button (click)="counter.decrement()">DECREMENT</button>
+
 
 <hr>
 

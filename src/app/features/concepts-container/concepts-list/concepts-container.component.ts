@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ConceptsListService } from './concepts-list.service';
 
 @Component({
@@ -23,6 +23,10 @@ export class ConceptsContainerComponent implements OnInit {
     } else {
       this.filteredConcepts = this.concepts;
     }
+  }
+
+  onLayoutChange(data) {
+    console.log(data);
   }
 
 }

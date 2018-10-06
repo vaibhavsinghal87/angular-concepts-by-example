@@ -7,6 +7,7 @@
   Hello {{ name }}
 </div>
 
-<input type="text" [(ngModel)]="name">
-
-<button (click)="reset()">Reset</button>
+<mat-form-field class="input-container">
+  <input matInput placeholder="Name" [(ngModel)]="name">
+</mat-form-field>
+<button mat-flat-button (click)="reset()">Reset</button>

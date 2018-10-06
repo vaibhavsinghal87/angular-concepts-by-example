@@ -5,7 +5,7 @@ import { keypoints } from './template-variables-keypoints';
 @Component({
   selector: 'app-template-variables',
   templateUrl: './template-variables.component.html',
-  styleUrls: ['./template-variables.component.css']
+  styleUrls: ['./template-variables.component.scss']
 })
 export class TemplateVariablesComponent implements OnInit {
 

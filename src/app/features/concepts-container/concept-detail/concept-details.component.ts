@@ -7,7 +7,7 @@ import { ConceptsListService } from '../concepts-list/concepts-list.service';
 @Component({
   selector: 'app-concept-details',
   templateUrl: './concept-details.component.html',
-  styleUrls: ['./concept-details.component.css']
+  styleUrls: ['./concept-details.component.scss']
 })
 export class ConceptDetailsComponent implements OnInit {
 

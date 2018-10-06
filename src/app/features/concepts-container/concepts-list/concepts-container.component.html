@@ -3,7 +3,7 @@
         <mat-toolbar-row>
             <app-search-concepts (changed)="searchTextChanged($event)"></app-search-concepts>
             <span class="spacer"></span>
-            <app-view-switcher #viewSwitcher></app-view-switcher>
+            <app-view-switcher #viewSwitcher (layoutChanged)="onLayoutChange($event)"></app-view-switcher>
         </mat-toolbar-row>
     </mat-toolbar>
 
