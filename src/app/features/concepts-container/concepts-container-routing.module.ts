@@ -21,7 +21,8 @@ const routes: Routes = [
       { path: 'contentProjection', loadChildren: 'app/features/concepts/content-projection/content-projection.module#ContentProjectionModule' },
       { path: 'templateVariables', loadChildren: 'app/features/concepts/template-variables/template-variables.module#TemplateVariablesModule' },
       { path: 'viewChild', loadChildren: 'app/features/concepts/view-child/view-child.module#ViewChildModule' },
-      { path: 'viewChildren', loadChildren: 'app/features/concepts/view-children/view-children.module#ViewChildrenModule' }
+      { path: 'viewChildren', loadChildren: 'app/features/concepts/view-children/view-children.module#ViewChildrenModule' },
+      { path: 'safeContent', loadChildren: 'app/features/concepts/injecting-safe-content/injecting-safe-content.module#InjectingSafeContentModule' }
     ]
   },
 ];
