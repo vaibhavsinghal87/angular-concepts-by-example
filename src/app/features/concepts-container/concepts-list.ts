@@ -13,5 +13,6 @@ export const conceptsList: Array<Object> = [
   { name: 'Template Variable', id: 'templateVariables' },
   { name: 'View Child', id: 'viewChild' },
   { name: 'View Children', id: 'viewChildren' },
-  { name: 'Interpolation vs innerHTML', id: 'safeContent' }
+  { name: 'Interpolation vs innerHTML', id: 'safeContent' },
+  { name: 'Safe Navigation Operator', id: 'safeNavigationOperator' }
 ]

@@ -9,6 +9,13 @@ export class PipeComponent implements OnInit {
 
   name = 'Vaibhav Singhal';
 
+  user: object = {
+    fName: 'Vaibhav',
+    lName: 'Singhal',
+    age: undefined,
+    profession: null
+  };
+
   value = 5;
 
   constructor() { }
