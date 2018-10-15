@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './features/header/header.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
+import { ConceptsContainerModule } from './features/concepts-container/concepts-container.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SharedModule } from './shared/shared.module';
     RouterModule,
     BrowserAnimationsModule,
     SharedModule,
+    ConceptsContainerModule,
     AppRoutingModule,
     HttpClientModule
   ],

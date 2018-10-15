@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SafeNavigationOperatorComponent implements OnInit {
 
-  user = {
-    fName: 'Vaibhav'
-  }
+  user = null;
 
   constructor() { }
 

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ConceptsListService } from './concepts-list.service';
 
+import { ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-concepts-container',
   templateUrl: './concepts-container.component.html',
@@ -11,10 +13,11 @@ export class ConceptsContainerComponent implements OnInit {
   concepts: Object[];
   filteredConcepts: Object[];
 
-  constructor(private conceptService: ConceptsListService) { }
+  constructor(private conceptService: ConceptsListService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.concepts = this.filteredConcepts = this.conceptService.getConceptList();
+    console.log(this.route.snapshot.data.concepts);
+    this.concepts = this.filteredConcepts = this.route.snapshot.data.concepts;
   }
 
   searchTextChanged(data: string) {
