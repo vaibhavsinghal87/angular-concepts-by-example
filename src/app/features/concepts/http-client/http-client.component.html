@@ -1,7 +1,7 @@
 <mat-form-field class="input-container">
   <input matInput placeholder="Enter github username" [(ngModel)]="user">
 </mat-form-field>
-<button mat-flat-button (click)="getUserDetails()">Fetch Details</button>
+<button mat-flat-button color="primary" (click)="getUserDetails()">Fetch Details</button>
 <div>
   {{ userDetails | json }}
 </div>
