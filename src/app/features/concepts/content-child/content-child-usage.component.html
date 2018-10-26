@@ -1,0 +1,12 @@
+<app-content-child>
+  <h3>Using @ContentChild to inject a reference to a DOM element</h3>
+  <div #elem>I am DIV. Use @ContentChild to access me.</div>
+
+  <hr>
+
+  <h3>Using @ContentChild to inject a reference to a Directive</h3>
+  <p appShowFullText [highlightColor]="'orange'">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua
+  </p>
+</app-content-child>

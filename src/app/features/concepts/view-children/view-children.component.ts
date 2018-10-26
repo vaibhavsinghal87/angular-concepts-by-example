@@ -21,6 +21,9 @@ export class ViewChildrenComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+    console.log('######################Output as Array######################');
+    console.log(this.directiveList.toArray());
+
     console.log('######################Accessing DOM elements######################');
     this.paragraphs.forEach(p => console.log(p));
 
