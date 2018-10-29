@@ -15,6 +15,9 @@ export class ConceptsContainerComponent implements OnInit {
 
   constructor(private conceptService: ConceptsListService, private route: ActivatedRoute) { }
 
+  /**
+   * Component is initialized again and again
+   */
   ngOnInit() {
     console.log(this.route.snapshot.data.concepts);
     this.concepts = this.filteredConcepts = this.route.snapshot.data.concepts;
