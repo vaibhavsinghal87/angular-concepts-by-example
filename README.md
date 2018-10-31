@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-DEMO - https://angular-concepts-by-examples.firebaseapp.com/
+Simple examples based on Angular core features. Uses `Angular and Angular Material` only.
+
+[DEMO](https://angular-concepts-by-examples.firebaseapp.com/)
 
 ## Development server
 
