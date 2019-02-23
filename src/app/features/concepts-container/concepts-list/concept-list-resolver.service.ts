@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Resolve } from '@angular/router';
-import { Observable } from 'rxjs';
 import { ConceptsListService } from './concepts-list.service'
 
 @Injectable()

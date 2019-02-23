@@ -14,5 +14,6 @@ export const conceptsList: Array<Object> = [
   { name: 'View Children', id: 'viewChildren' },
   { name: 'Interpolation vs innerHTML', id: 'safeContent' },
   { name: 'Safe Navigation Operator', id: 'safeNavigationOperator' },
-  { name: 'Content child', id: 'contentChild' }
+  { name: 'Content child', id: 'contentChild' },
+  { name: 'NgFor', id: 'ngFor' }
 ]

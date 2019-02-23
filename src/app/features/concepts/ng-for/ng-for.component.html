@@ -1,0 +1,17 @@
+<button (click)="changeCollection()">CHANGE COLLECTION</button>
+<br/>
+<br/>
+
+With trackBy - 
+<ul>
+  <li *ngFor="let entry of collection;trackBy: trackByFn">
+    {{ entry.name }}
+  </li>
+</ul>
+
+Without trackBy - 
+<ul>
+  <li *ngFor="let entry of collection">
+    <input type="text" [(ngModel)]="entry.name" />
+  </li>
+</ul>

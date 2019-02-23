@@ -28,7 +28,8 @@ const routes: Routes = [
       { path: 'viewChildren', loadChildren: 'app/features/concepts/view-children/view-children.module#ViewChildrenModule' },
       { path: 'safeContent', loadChildren: 'app/features/concepts/injecting-safe-content/injecting-safe-content.module#InjectingSafeContentModule' },
       { path: 'safeNavigationOperator', loadChildren: 'app/features/concepts/safe-navigation-operator/safe-navigation-operator.module#SafeNavigationOperatorModule' },
-      { path: 'contentChild', loadChildren: 'app/features/concepts/content-child/content-child.module#ContentChildModule' }
+      { path: 'contentChild', loadChildren: 'app/features/concepts/content-child/content-child.module#ContentChildModule' },
+      { path: 'ngFor', loadChildren: 'app/features/concepts/ng-for/ng-for.module#NgForModule' }
     ]
   },
   { path: '', redirectTo: 'concepts', pathMatch: 'full' }
