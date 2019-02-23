@@ -7,15 +7,15 @@ import { Component, OnInit, HostListener, HostBinding } from '@angular/core';
 })
 export class HostListenerBindingComponent implements OnInit {
 
-  @HostBinding('style.color') color: string;
+  @HostBinding('style.color') color: string = "";
 
-  @HostListener('click') onMouseEnter() {
-    console.log('component click handler')
+  @HostListener('click') onHostClick() {
+    console.log('component click handler');
     this.color = "gold";
   };
 
-  @HostListener('window:click') onClick() {
-    console.log('window click handler')
+  @HostListener('window:click') onWindowClick() {
+    console.log('window click handler');
   };
 
   constructor() { }
