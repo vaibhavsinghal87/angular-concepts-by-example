@@ -15,5 +15,6 @@ export const conceptsList: Array<Object> = [
   { name: 'Interpolation vs innerHTML', id: 'safeContent' },
   { name: 'Safe Navigation Operator', id: 'safeNavigationOperator' },
   { name: 'Content child', id: 'contentChild' },
-  { name: 'NgFor', id: 'ngFor' }
+  { name: 'NgFor', id: 'ngFor' },
+  { name: 'Host Listener & Host Binding', id: 'hostSpecs' }
 ]
