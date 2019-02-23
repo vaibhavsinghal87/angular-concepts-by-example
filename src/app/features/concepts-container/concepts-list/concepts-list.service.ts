@@ -10,7 +10,7 @@ import { flatMap } from 'rxjs/operators';
 export class ConceptsListService {
 
   items$: Observable<any[]>;
-  conceptList: Object[];
+  conceptList: Object[] = conceptsList;
   firebaseConceptList: Object[] = [];
 
   constructor(private db: AngularFirestore) {
