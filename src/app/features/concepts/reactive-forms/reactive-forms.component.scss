@@ -1,0 +1,17 @@
+.form-group {
+    width: 400px;
+    margin-bottom: 10px;
+
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+}
+
+button {
+    margin-right: 10px;
+}
+
+.invalid-feedback {
+    color: red;
+}

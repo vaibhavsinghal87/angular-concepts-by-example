@@ -30,7 +30,8 @@ const routes: Routes = [
       { path: 'safeNavigationOperator', loadChildren: 'app/features/concepts/safe-navigation-operator/safe-navigation-operator.module#SafeNavigationOperatorModule' },
       { path: 'contentChild', loadChildren: 'app/features/concepts/content-child/content-child.module#ContentChildModule' },
       { path: 'ngFor', loadChildren: 'app/features/concepts/ng-for/ng-for.module#NgForModule' },
-      { path: 'hostSpecs', loadChildren: 'app/features/concepts/host-listener-binding/host-listener-binding.module#HostListenerBindingModule' }
+      { path: 'hostSpecs', loadChildren: 'app/features/concepts/host-listener-binding/host-listener-binding.module#HostListenerBindingModule' },
+      { path: 'reactiveForms', loadChildren: 'app/features/concepts/reactive-forms/reactive-forms.module#ReactiveFormModule' }
     ]
   },
   { path: '', redirectTo: 'concepts', pathMatch: 'full' }

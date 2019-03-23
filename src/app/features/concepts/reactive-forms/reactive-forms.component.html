@@ -1,0 +1,40 @@
+<div class="json">{{registrationForm.value | json}}</div>
+<br />
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit(registrationForm)">
+  <div class="form-group">
+    <label>First Name</label>
+    <input type="text" formControlName="firstName" class="form-control"
+      [ngClass]="{ 'is-invalid': firstName.errors }" />
+    <div *ngIf="firstName.dirty && firstName.errors" class="invalid-feedback">
+      <div *ngIf="firstName.errors.required">First Name is required</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Last Name</label>
+    <input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': lastName.errors }" />
+    <div *ngIf="lastName.dirty && lastName.errors" class="invalid-feedback">
+      <div *ngIf="lastName.errors.required">Last Name is required</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': email.errors }" />
+    <div *ngIf="email.dirty && email.errors" class="invalid-feedback">
+      <div *ngIf="email.errors.required">Email is required</div>
+      <div *ngIf="email.errors.email">Email must be a valid email address</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" formControlName="password" class="form-control"
+      [ngClass]="{ 'is-invalid': password.errors }" />
+    <div *ngIf="password.dirty && password.errors" class="invalid-feedback">
+      <div *ngIf="password.errors.required">Password is required</div>
+      <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <button mat-flat-button color="primary" type="submit" [disabled]="!registrationForm.valid">Register</button>
+    <button mat-flat-button color="primary" (click)="reset()">Reset</button>
+  </div>
+</form>

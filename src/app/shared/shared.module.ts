@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material/material.module';
 
@@ -15,6 +15,7 @@ import { ResetCounterComponent } from './components/reset-counter/reset-counter.
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialModule
   ],
   declarations: [
@@ -27,6 +28,7 @@ import { ResetCounterComponent } from './components/reset-counter/reset-counter.
   exports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialModule,
     CounterComponent,
     KeypointsComponent,
